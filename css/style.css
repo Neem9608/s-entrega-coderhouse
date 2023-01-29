@@ -115,6 +115,26 @@ main img {
   font-weight: bold;
 }
 
+/* contenido about */
+
+#about {
+}
+.img-about {
+  margin-right: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  margin: 3em 6em;
+  width: 50%;
+}
+.about-container {
+  margin: 20px;
+  display: block;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   body {
@@ -277,5 +297,40 @@ main img {
     background-color: #fefff6;
     color: #10315c;
     transition: 0.5s;
+  }
+
+  /* contenido about */
+
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .img-about {
+    margin-right: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container {
+    padding: 5em;
+  }
+  .about-container h2 {
+    padding: 1em;
+    font-size: 3em;
+  }
+  .about-container h2:hover {
+    color: #42c4c0;
+    transition: 0.5s;
+  }
+  section img {
+    margin: 3em 6em;
+    width: 20%;
+  }
+  .about-container {
+    margin: 20px;
+    display: block;
   }
 }
