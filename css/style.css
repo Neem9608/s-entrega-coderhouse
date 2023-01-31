@@ -19,6 +19,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 nav {
   display: flex;
@@ -88,8 +89,9 @@ a .logo {
 /* contenido main */
 
 main img {
+  padding: 4em 2em 1em;
   width: 80%;
-  margin: 0.5em 2.4em;
+  margin: 0.5em 3em;
 }
 
 .titulo-banner {
@@ -224,6 +226,47 @@ section img {
   font-weight: bold;
 }
 .boton-work:hover {
+  border-radius: 0.3em;
+  background-color: #fefff6;
+  color: #10315c;
+  transition: 0.5s;
+}
+/* contenido contact */
+#contact {
+  padding: 1em;
+}
+.title-contact {
+  margin: 0.21em;
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+.contact-container {
+  margin: 0 0.7em;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #fefff6;
+  border-radius: 0.3em;
+}
+.color-contact {
+  border-color: #42c4c0;
+  background: #fefff6;
+}
+.color-contact:hover {
+  border-color: #10315c;
+}
+.contact-container .text-color {
+  color: #fefff6;
+  font-weight: bold;
+}
+
+.boton-contact {
+  background-color: #42c4c0;
+  color: #fefff6;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+.boton-contact:hover {
   border-radius: 0.3em;
   background-color: #fefff6;
   color: #10315c;
@@ -365,10 +408,9 @@ section img {
     align-items: center;
   }
   main h1 {
-    /* width: 950px;
-    padding: 1em; */
+    width: 950px;
+    padding: 1em;
     grid-area: h1;
-    /* width: 950px; */
   }
 
   main img {
@@ -477,8 +519,9 @@ section img {
   /* contenido work */
 
   #work {
-    padding: 1em;
+    padding: 1em 3em;
   }
+
   .title-work {
     margin: 0.21em;
     padding: 1em;
@@ -518,6 +561,72 @@ section img {
     font-weight: bold;
   }
   .boton-work:hover {
+    border-radius: 0.3em;
+    background-color: #fefff6;
+    color: #10315c;
+    transition: 0.5s;
+  }
+
+  /* contenido contact */
+  #contact {
+    padding: 1em;
+  }
+  .title-contact {
+    margin: 0.21em;
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .contact-container {
+    padding: 0 12em;
+  }
+  .contact-container form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+      "contact-email contact-name"
+      " contact-message contact-message"
+      " contact-boton contact-boton";
+  }
+  .contact-container .contact-name {
+    /* padding: 0 1em; */
+    grid-area: contact-name;
+  }
+  .contact-container .contact-email {
+    grid-area: contact-email;
+  }
+
+  .contact-container .contact-message {
+    grid-area: contact-message;
+  }
+  .contact-container .contact-boton {
+    /* margin-bottom: 3em; */
+
+    text-align: center;
+    grid-area: contact-boton;
+  }
+
+  .color-contact {
+    border-color: #42c4c0;
+    background: #fefff6;
+  }
+  .color-contact:hover {
+    border-color: #10315c;
+  }
+  .contact-container .text-color {
+    color: #fefff6;
+    font-weight: bold;
+  }
+
+  .boton-contact {
+    background-color: #42c4c0;
+    color: #fefff6;
+    border-radius: 0.3em;
+    font-weight: bold;
+  }
+  .boton-contact:hover {
     border-radius: 0.3em;
     background-color: #fefff6;
     color: #10315c;
