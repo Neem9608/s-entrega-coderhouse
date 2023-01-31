@@ -13,6 +13,7 @@ body {
 }
 /* header */
 header {
+  background: #fefff6;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -185,6 +186,50 @@ section img {
   padding: 0.4em;
 }
 
+/* contenido work */
+
+#work {
+  padding: 1em;
+}
+.title-work {
+  margin: 0.21em;
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.work-container {
+  padding: 2em;
+  margin: 0 0.7em;
+  background: #fefff6;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #fefff6;
+  border-radius: 0.3em;
+}
+.card-container {
+  padding: 1rem;
+}
+.card-work {
+  background: #42c4c0;
+  width: 18rem;
+}
+.card-work .card-title {
+  font-weight: bold;
+}
+.boton-work {
+  background-color: #10315c;
+  color: #fefff6;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+.boton-work:hover {
+  border-radius: 0.3em;
+  background-color: #fefff6;
+  color: #10315c;
+  transition: 0.5s;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   body {
@@ -274,7 +319,7 @@ section img {
       background-position-x: calc(100vw - 800px);
     } */
   header {
-    background-color: rgb(255, 255, 255);
+    background-color: #fefff6;
   }
   header nav {
     display: flex;
@@ -320,17 +365,17 @@ section img {
     align-items: center;
   }
   main h1 {
-    width: 950px;
-    padding: 1em;
+    /* width: 950px;
+    padding: 1em; */
     grid-area: h1;
-    width: 950px;
+    /* width: 950px; */
   }
 
   main img {
     grid-area: img;
   }
   main .boton-banner {
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
     grid-area: boton-banner;
   }
   main img {
@@ -427,5 +472,55 @@ section img {
   }
   .skill-content .img-html {
     padding: 0.8em;
+  }
+
+  /* contenido work */
+
+  #work {
+    padding: 1em;
+  }
+  .title-work {
+    margin: 0.21em;
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .work-container {
+    padding: 2em;
+    margin: 0 0.7em;
+    display: flex;
+    background: #fefff6;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #fefff6;
+    border-radius: 0.3em;
+  }
+  .card-container {
+    padding: 1rem;
+  }
+  .card-work {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #42c4c0;
+    width: 18rem;
+  }
+  .card-work .card-title {
+    font-weight: bold;
+  }
+
+  .boton-work {
+    background-color: #10315c;
+    color: #fefff6;
+    border-radius: 0.3em;
+    font-weight: bold;
+  }
+  .boton-work:hover {
+    border-radius: 0.3em;
+    background-color: #fefff6;
+    color: #10315c;
+    transition: 0.5s;
   }
 }
