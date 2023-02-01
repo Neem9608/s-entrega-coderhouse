@@ -13,8 +13,8 @@ body {
 }
 /* header */
 header {
-  background: #fefff6;
-  height: 80px;
+  background: #10315c;
+  height: 60px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -38,6 +38,7 @@ nav {
   color: #fefff6;
   display: flex;
   justify-content: space-between;
+
   text-decoration: none;
   font-size: 2em;
   font-weight: bold;
@@ -50,18 +51,18 @@ a .logo {
 }
 .nav-menu {
   display: flex;
-  margin-right: 20px;
+  margin-right: 40px;
   list-style: none;
 }
 .nav-menu-item {
   font-size: 18px;
   margin: 0 10px;
-  line-height: 80px;
+  line-height: 50px;
   width: max-content;
 }
 
 .nav-menu-link {
-  padding: 0.5em 0.5em;
+  padding: 0.5em;
 
   color: #fefff6;
   font-size: 1.2em;
@@ -97,7 +98,7 @@ main img {
 .titulo-banner {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   text-align: center;
   margin: 0.5em 0.5em;
 }
@@ -117,13 +118,20 @@ main img {
   border-radius: 0.3em;
   font-weight: bold;
 }
+.contenido-boton:hover {
+  border-radius: 0.3em;
+  background-color: #fefff6;
+  color: #10315c;
+  transition: 0.5s;
+}
 
 /* contenido about */
 
 #about {
   padding: 1em;
 }
-section img {
+section .img-about {
+  display: none;
   width: 20em;
 }
 .about-container {
@@ -301,8 +309,7 @@ section img {
   body {
     padding-top: 70px 20px 0;
   }
-  /* header */
-  header {
+  header header {
     height: 60px;
   }
 
@@ -334,7 +341,8 @@ section img {
     transition: left 0.3s;
   }
   .nav-menu-item {
-    line-height: 70px;
+    line-height: 2em;
+    background: transparent;
   }
 
   .nav-toggle {
@@ -343,8 +351,11 @@ section img {
   .nav-menu_visible {
     left: 0;
   }
+  .nav-link {
+    padding: auto;
+  }
   .nav-link:hover {
-    border-radius: 0.3em;
+    border-radius: 0.4em;
     background-color: #10315c;
     transition: 0.5s;
   }
@@ -386,6 +397,12 @@ section img {
     } */
   header {
     background-color: #fefff6;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
   header nav {
     display: flex;
@@ -465,7 +482,8 @@ section img {
   #about {
     padding: 1em;
   }
-  .img-about {
+  section .img-about {
+    display: block;
     width: 20%;
   }
   .about-container {
